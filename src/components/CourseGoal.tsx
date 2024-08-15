@@ -1,10 +1,7 @@
-import { type PropsWithChildren } from "react";
+import { type FC,type PropsWithChildren } from "react";
 type CourseGoalProps = PropsWithChildren<{title:string}>;
-// type CourseGoalProps = {
-//     readonly title:string,
-//     readonly children:ReactNode
-// }
-function CourseGoal({title,children}:CourseGoalProps){
+
+const  CourseGoal:FC<CourseGoalProps>=({title,children})=>{
     return(
         <article>
             <div>
