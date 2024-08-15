@@ -1,13 +1,15 @@
-type CourseGoalProps = {
-    readonly title:string,
-    readonly description:string
-}
-function CourseGoal({title,description}:CourseGoalProps){
+import { type PropsWithChildren } from "react";
+type CourseGoalProps = PropsWithChildren<{title:string}>;
+// type CourseGoalProps = {
+//     readonly title:string,
+//     readonly children:ReactNode
+// }
+function CourseGoal({title,children}:CourseGoalProps){
     return(
         <article>
             <div>
                 <h1>{title}</h1>
-                <p>{description}</p>
+                {children}
             </div>
             <button>Delete</button>
         </article>
