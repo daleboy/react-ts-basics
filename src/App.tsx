@@ -1,6 +1,6 @@
 import "./App.css";
 import CourseGoal from "./components/CourseGoal";
-import logoImg from "./assets/react.svg"
+import logoImg from "./assets/goals.jpg"
 import Header from "./components/Header";
 import { useState } from "react";
 import CourseGoalList from "./components/CourseGoalList";

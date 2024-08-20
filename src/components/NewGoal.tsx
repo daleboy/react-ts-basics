@@ -10,7 +10,7 @@ function NewGoal({onAddGoal}:NewGoalProps){
         const inputGoal = goal.current!.value;   
         const inputSummary = summary.current!.value;   
         event.currentTarget.reset();
-        onAddGoal(inputGoal,inputSummary)  
+        onAddGoal(inputGoal,inputSummary) 
     }
     return(
         <form onSubmit={handleSubmit}>
